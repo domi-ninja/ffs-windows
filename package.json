@@ -10,6 +10,7 @@
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "ffs": "node ./dist/ffs.js",
+    "test:install": "powershell.exe -NoProfile -ExecutionPolicy Bypass -File ./tests/install.tests.ps1",
     "test:cli": "node ./dist/ffs.js dotnet test"
   },
   "engines": {
